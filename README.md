@@ -2,7 +2,7 @@
 A support method for easy retry logic.
 
 ## Notice
-**This is not my wrting code**
+**This is not my own work**
 <br/>
 This library is implement a stackoverflow question's answer, it's very good and clean way
 <br/>
