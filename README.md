@@ -14,4 +14,13 @@ Install-Package Ci.Retry
 
 then at want to retry method use:
 ```csharp
+Retry.Do(() => SomeFunctionThatCanFail(), TimeSpan.FromSeconds(1));
+```
+or:
+```csharp
+Retry.Do(SomeFunctionThatCanFail, TimeSpan.FromSeconds(1));
+```
+or:
+```csharp
+int result = Retry.Do(SomeFunctionWhichReturnsInt, TimeSpan.FromSeconds(1), 4);
 ```
