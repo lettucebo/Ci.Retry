@@ -22,5 +22,5 @@ Retry.Do(SomeFunctionThatCanFail, TimeSpan.FromSeconds(1));
 ```
 or:
 ```csharp
-int result = Retry.Do(SomeFunctionWhichReturnsInt, TimeSpan.FromSeconds(1), 4);
+int result = Retry.Do(SomeFunctionWhichReturnsInt, TimeSpan.FromSeconds(1), /*Attempt COunt*/ 4);
 ```
